@@ -1,4 +1,4 @@
-package scala.com.mikemunhall.scalakatas.scala
+package com.mikemunhall.katas.scala
 
 object Factorial {
 
