@@ -18,7 +18,7 @@ public class FactorialTest {
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void factorialShouldThrowIAEForNegativeNumbersss() {
+    public void factorialShouldThrowIAEForNegativeNumbers() {
         Factorial.getResult(-5);
     }
 
