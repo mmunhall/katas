@@ -1,6 +1,5 @@
 package com.mikemunhall.katas.java;
 
-
 public class FizzBuzz {
 
     public static String getResult(Integer x) {
