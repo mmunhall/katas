@@ -1,6 +1,6 @@
 package com.mikemunhall.katas.scala
 
-object HigherOrderFn {
+object HigherOrderFn extends App {
 
   def getResult(f: Int => Int, x: Int, y: Int): Int = {
     if (x == y) f(x) else

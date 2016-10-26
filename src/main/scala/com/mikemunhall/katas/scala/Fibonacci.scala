@@ -2,6 +2,7 @@ package com.mikemunhall.katas.scala
 
 object Fibonacci {
 
+  // List(1, 1, 2, 3, 5, 8, 13, 21, 35, ...)
   def getResult(max: Int, acc: List[Int] = Nil): List[Int] = {
 
     if (max < 0) {
