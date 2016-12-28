@@ -4,7 +4,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class EitherSpec extends FlatSpec with Matchers {
 
-  "either" should "map" in {
+  "Either" should "map" in {
     val r = Right(1)
     val l = Left("not numeric")
 
@@ -12,12 +12,20 @@ class EitherSpec extends FlatSpec with Matchers {
     l.map(_.toString) shouldBe Left("not numeric")
   }
 
-  "either" should "flatMap" in {
+  it should "flatMap" in {
     val r = Right(1)
     val l = Left("not numeric")
 
     r.flatMap(v => Right(v.toString)) shouldBe Right("1")
     l.flatMap(v => Right(v.toString)) shouldBe Left("not numeric")
+  }
+
+  it should "orElse" in {
+    val r = Right(1)
+    val l = Left("not numeric")
+
+    r.orElse(Right(2)) shouldBe Right(1)
+    l.orElse(Right(2)) shouldBe Right(2)
   }
 
 }
